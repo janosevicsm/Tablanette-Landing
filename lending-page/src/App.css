@@ -1,0 +1,150 @@
+:root {
+  /* Primary Palette */
+  --color-primary-main: #032D23;
+  --color-secondary-main: #79E684;
+  --color-background-default: #1B4242;
+
+  /* Status Colors */
+  --color-success-main: #3FCB4D;
+  --color-error-main: #DD3636;
+
+  /* Text Colors */
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #032D23;
+
+  /* Fonts */
+  --font-family-body: 'Poppins', sans-serif;
+  --font-family-heading: 'Righteous', cursive;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 90vh;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+#content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header-description {
+  text-shadow: #0a0a0a 20px 10px 10px;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 6rem;
+  font-family: 'Righteous', sans-serif;
+  margin: 0;
+  color: var(--color-text-primary);
+  padding: 2rem;
+}
+
+#silk-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.carousel-container > * {
+  background-color: var(--color-primary-main);
+}
+
+.carousel-item {
+  background-color: var(--color-background-default) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.carousel-item-header {
+  padding: 2rem 0 0 !important;
+}
+
+.carousel-icon-container {
+  transform: scale(2) !important;
+}
+
+.carousel-icon {
+  color: var(--color-background-default) !important;
+}
+
+.carousel-item-title {
+  font-family: var(--font-family-heading), cursive !important;
+  font-size: xx-large !important;
+}
+
+.carousel-item-description {
+  font-size: larger !important;
+}
+
+.image-carousel-container {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.image-carousel-container img {
+  box-shadow: #0a0a0a 20px 10px 10px !important;
+}
+
+.logo-container {
+  max-width: 20rem;
+  object-fit: contain;
+}
+
+.logo-container img {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .header-description {
+    font-size: 1.5rem !important;
+  }
+
+  .download-container {
+    width: 80%;
+  }
+
+  .download-container img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+
+}
