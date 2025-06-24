@@ -1,4 +1,3 @@
-// src/App.tsx
 import { Box, Container, Typography } from '@mui/material';
 import appStoreIcon from './assets/App_Store.svg.png';
 import canyonCardBack from './assets/Canyon.jpeg';
@@ -10,6 +9,8 @@ import northernLightsCardBack from './assets/Northern_Lights.jpeg';
 import oceanCardBack from './assets/Ocean.jpeg';
 import pirateShipCardBack from './assets/Pirate_Ship.jpeg';
 import waterfallCardBack from './assets/Waterfall.jpeg';
+import logo from './assets/Logo.png';
+
 import './App.css'
 import Carousel from "./blocks/Components/Carousel/Carousel.tsx";
 
@@ -23,7 +24,6 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 import Silk from "./blocks/Backgrounds/Silk/Silk.tsx";
 import CircularGallery from "./blocks/Components/CircularGallery/CircularGallery.tsx";
-import GradientText from "./blocks/TextAnimations/GradientText/GradientText.tsx";
 import Footer from "./components/footer.tsx";
 
 const carouselItems: CarouselItem[] = [
@@ -78,19 +78,14 @@ function App() {
                     scale={1}
                     color="#1B4242"
                     noiseIntensity={1.5}
-                    rotation={30}
+                    rotation={45}
                 />
             </Box>
             <Box id={"content-container"}>
                 <Container className={"container"} >
-                    <GradientText
-                        colors={["#1B4242", "#79E684", "#1B4242", "#79E684", "#1B4242"]}
-                        animationSpeed={8}
-                        showBorder={true}
-                        className="title"
-                    >
-                        Tablanette
-                    </GradientText>
+                    <Box className="logo-container">
+                        <img src={logo} alt={"logo"}/>
+                    </Box>
                     <Typography variant="h3" color="text.primary" className={"header-description"}>
                         Traditional Balkan card game now available on iOS.
                     </Typography>
